@@ -18,7 +18,7 @@ function AttractionsCart() {
     queryKey: ['attraction', attractionId],
     queryFn: async () => {
       const response = await fetch(
-        `https://672a01fc6d5fa4901b6f58b6.mockapi.io/catalog/catalog/${attractionId}`,
+        `https://672a01fc6d5fa4901b6f58b6.mockapi.io/catalog/catalog/${attractionId}`
       );
       if (!response.ok) {
         throw new Error('Ошибка загрузки данных');

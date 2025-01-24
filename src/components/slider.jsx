@@ -21,21 +21,21 @@ function Slider() {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
   };
 
-  const startSlideShow = () => {
+  const startSlideShow = startSlideShow(() => {
     slideIntervalRef.current = setInterval(() => {
       nextSlide();
     }, 3000);
-  };
+  });
 
-  const stopSlideShow = () => {
+  function stopSlideShow() {
     clearInterval(slideIntervalRef.current);
-  };
+  }
 
   useEffect(() => {
     startSlideShow();
 
     return () => stopSlideShow();
-  }, []);
+  }, [startSlideShow]);
 
   useEffect(() => {
     if (slideContainerRef.current) {
