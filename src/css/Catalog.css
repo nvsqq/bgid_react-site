@@ -1,0 +1,233 @@
+.catalog__plate_link {
+  color: #4f4f4f;
+}
+
+.btn {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn img {
+  border-radius: 10px;
+  width: 100%;
+  height: 60%;
+}
+
+.content__wrap {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.info {
+  width: 50%;
+}
+
+.catalog__wrap {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.catalog__filters {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+@media (max-width: 426px) {
+  .catalog__filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .catalog__filters {
+    display: flex;
+  }
+}
+.catalog__filters_title {
+  font-size: 20px;
+}
+.catalog__filters #showAllButton {
+  color: #696969;
+}
+.catalog__filter-btn {
+  border: 1px;
+  border-radius: 20px;
+  padding: 5px 9px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 1.2s ease;
+}
+.catalog__filter-btn.active {
+  background-color: #000;
+  color: #fff;
+  transition: all 1.2s;
+}
+.catalog__search-input {
+  margin-top: 20px;
+  padding: 10px 100px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+  width: 100%;
+}
+@media (max-width: 426px) {
+  .catalog__search-input {
+    width: 100%;
+  }
+}
+.catalog__left-block {
+  margin-right: 20px;
+  margin-left: 25px;
+}
+.catalog__right-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalog__right-block #noResultsMessage {
+  margin-top: 20px;
+  display: none;
+  font-size: 20px;
+}
+.catalog__title {
+  font-size: 25px;
+}
+@media (max-width: 320px) {
+  .catalog__title {
+    font-size: 20px;
+  }
+}
+.catalog__container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 426px) {
+  .catalog__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .catalog__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.catalog__plate {
+  box-shadow: 0 0 10px 0 rgba(97, 97, 97, 0.2);
+  color: #000;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.catalog__plate_text {
+  padding: 10px;
+}
+.catalog__plate_title {
+  font-size: 16px;
+}
+.catalog__plate_grade {
+  margin-top: 5px;
+}
+.catalog__plate_type {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #4f4f4f;
+}
+.catalog__plate_description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.catalog__plate_adress {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #000;
+  vertical-align: bottom;
+}
+.catalog__message {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+.catalog__message--error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+.catalog__message--not-found {
+  background-color: #f5f5f5;
+  color: #616161;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  width: 60px;
+  height: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+
+.pagination button.active {
+  border-bottom: 3.5px solid #000;
+  padding-top: 3.5px;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+}
+
+.pagination button:disabled:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination button:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.pagination button:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.pagination button:hover {
+  background-color: #dfdfdf;
+}

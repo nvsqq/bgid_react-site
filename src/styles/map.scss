@@ -1,0 +1,120 @@
+
+.map{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    &__title{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__buttons{
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        row-gap: 100px;
+        column-gap: 100px;
+        justify-content: center;
+        justify-items: center;
+        // @media (max-width: 376px) {
+        //   grid-template-columns: repeat(2, 100px);
+        //   row-gap: 30px;
+        //   column-gap: 70px;
+        // }
+        @media (max-width: 426px) {
+          grid-template-columns: repeat(2, 100px);
+          row-gap: 30px;
+          column-gap: 70px;
+        }
+        @media (min-width: 768px) {
+          grid-template-columns: repeat(4, 100px);
+        }
+        @media (min-width: 1024px) {
+          grid-template-columns: repeat(4, 100px);
+        }
+        @media (min-width: 1400px) {
+          grid-template-columns: repeat(4, 100px);
+        }
+        
+    }
+    &__btn{
+      text-transform: uppercase;
+        font-weight: 800;
+        font-size: 15px;
+        width: 140px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: #D9D9D9;
+        color: #000;
+        transform: translateY(-10px);
+    }
+    &__btn.active{
+      transition: all 1.2s; 
+      transition: all 0.2s;
+      transform: translateY(-5px);
+    }
+    
+    
+    
+    
+
+    
+}
+
+
+iframe{
+  width: 100vh;
+  height: 450px;
+  border-radius: 10px;
+  @media (max-width: 376px) {
+    width: 45vh;
+    height: 350px;
+  }
+  @media (min-width: 390px) {
+    width: 50vh;
+    height: 350px;
+  }
+  @media (min-width: 425px) {
+    width: 50vh;
+    height: 350px;
+  }
+  @media (min-width: 768px) {
+    width: 100vh;
+    height: 450px;
+  }
+  @media (min-width: 1024px) {
+    width: 120vh;
+    height: 450px;
+  }
+  @media (min-width: 1400px) {
+    width: 130vh;
+    height: 550px;  
+  }
+}
+
+
+.map-style {
+  display: none; 
+}
+
+
+
+.map__btn {
+    
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}
+
+.map__btn.active {
+    background-color: #000; 
+    color: #fff; 
+}

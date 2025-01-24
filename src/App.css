@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/Montserrat-Black.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/Montserrat-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/Montserrat-Medium.ttf');
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+/* Общие стили */
+
+.container {
+  padding: 0 20px;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
